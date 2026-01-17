@@ -257,10 +257,10 @@
         EXTRA {
             display-name = "Extra";
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &msc SCRL_UP      &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &msc SCRL_DOWN    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans  &trans     &trans     &trans  &trans  &trans
-                                &trans          &trans           &trans            &trans  &trans     &trans
+&kp NB_AE       &trans  &trans          &trans          &trans           &msc SCRL_UP      &trans  &trans     &trans     &trans  &trans  &trans
+&kp NB_O_SLASH  &trans  &trans          &mmv MOVE_UP    &trans           &msc SCRL_DOWN    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+&kp NB_A_RING   &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans  &trans     &trans     &trans  &trans  &trans
+                                        &trans          &trans           &trans            &trans  &trans     &trans
             >;
         };
     };
