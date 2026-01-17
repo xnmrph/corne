@@ -63,6 +63,13 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
+        ae: ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_9>;
+            label = "AE";
+        };
     };
 
     combos {
@@ -166,6 +173,16 @@
             bindings = <&paragreat>;
             key-positions = <20 21>;
             layers = <0>;
+        };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <26 27>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <28 27>;
         };
     };
 
