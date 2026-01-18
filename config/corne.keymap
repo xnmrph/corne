@@ -428,10 +428,10 @@
 
         NOR {
             bindings = <
-&aa_win_shift  &oe_win_shift  &ae_win_shift  &trans  &aa_osx_shift  &aa_osx    &trans  &trans  &trans  &trans  &trans  &trans
-&aa_win        &oe_win        &ae_win        &trans  &oe_osx_shift  &oe_osx    &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &trans         &trans         &trans  &ae_osx_shift  &ae_osx    &trans  &trans  &trans  &trans  &trans  &trans
-                                             &trans  &trans         &trans     &trans  &trans  &trans
+&aa_win_shift  &oe_win_shift  &ae_win_shift  &trans  &aa_osx_shift  &aa_osx    &trans  &trans          &trans  &trans  &trans  &trans
+&aa_win        &oe_win        &ae_win        &trans  &oe_osx_shift  &oe_osx    &trans  &trans          &trans  &trans  &trans  &trans
+&trans         &trans         &trans         &trans  &ae_osx_shift  &ae_osx    &trans  &kp KP_NUMLOCK  &trans  &trans  &trans  &trans
+                                             &trans  &trans         &trans     &trans  &trans          &trans
             >;
 
             label = "NOR";
