@@ -67,11 +67,40 @@
                 <&kp LCTRL>;
         };
 
-        ae: ae {
+        aa_win: ae {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_9>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "AE";
+        };
+
+        aa_win_shift: aa_win_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N7>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "AA_WIN_SHIFT";
+        };
+
+        aa_osx: aa_osx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LALT>, <&macro_tap>, <&kp A>;
+
+            label = "AA_OSX";
         };
     };
 
