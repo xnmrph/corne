@@ -179,12 +179,12 @@
         };
 
         copy {
-            bindings = <&kp LS(C)>;
+            bindings = <&kp LC(C)>;
             key-positions = <26 27>;
         };
 
         paste {
-            bindings = <&kp LS(V)>;
+            bindings = <&kp LC(V)>;
             key-positions = <28 27>;
         };
     };
