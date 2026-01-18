@@ -98,9 +98,141 @@
         aa_osx: aa_osx {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LALT>, <&macro_tap>, <&kp A>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "AA_OSX";
+        };
+
+        oe_win: oe_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "OE_WIN";
+        };
+
+        oe_win_shift: oe_win_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "OE_WIN_SHIFT";
+        };
+
+        aa_osx_shift: aa_osx_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_press>,
+                <&kp LALT &kp LEFT_SHIFT>;
+
+            label = "AA_OSX_SHIFT";
+        };
+
+        oe_osx: oe_osx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "OE_OSX";
+        };
+
+        oe_osx_shift: oe_osx_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_press>,
+                <&kp LALT &kp LEFT_SHIFT>;
+
+            label = "OE_OSX_SHIFT";
+        };
+
+        ae_win: ae_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "AE_WIN";
+        };
+
+        ae_win_shift: ae_win_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "AE_WIN_SHIFT";
+        };
+
+        ae_osx: ae_osx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp APOSTROPHE>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "AE_OSX";
+        };
+
+        ae_osx_shift: ae_osx_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp APOSTROPHE>,
+                <&macro_release>,
+                <&kp LALT &kp LEFT_SHIFT>;
+
+            label = "AE_OSX_SHIFT";
         };
     };
 
@@ -292,6 +424,26 @@
 &kp NB_A_RING   &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans  &trans     &trans     &trans  &trans  &trans
                                         &trans          &trans           &trans            &trans  &trans     &trans
             >;
+        };
+
+        NOR {
+            bindings = <
+&aa_win_shift  &oe_win_shift  &ae_win_shift  &trans  &aa_osx_shift  &aa_osx    &trans  &trans  &trans  &trans  &trans  &trans
+&aa_win        &oe_win        &ae_win        &trans  &oe_osx_shift  &oe_osx    &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans         &trans         &trans  &ae_osx_shift  &ae_osx    &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans  &trans         &trans     &trans  &trans  &trans
+            >;
+
+            label = "NOR";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        uuh {
+            if-layers = <4 2>;
+            then-layer = <5>;
         };
     };
 };
