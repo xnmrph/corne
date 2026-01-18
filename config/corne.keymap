@@ -1,10 +1,10 @@
+#include "keys_nb.h"
+#include "zmk-helpers/helper.h"
+#include <behaviors/unicode.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "keys_nb.h"
-#include "zmk-helpers/helper.h"
-#include <behaviors/unicode.dtsi>
 
 #define DEF 0
 #define NAV 1
@@ -179,12 +179,12 @@
         };
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LS(C)>;
             key-positions = <26 27>;
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LS(V)>;
             key-positions = <28 27>;
         };
     };
