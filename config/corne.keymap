@@ -173,7 +173,7 @@
                 <&kp LALT &kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp O>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LALT &kp LEFT_SHIFT>;
 
             label = "OE_OSX_SHIFT";
