@@ -145,7 +145,7 @@
                 <&kp LALT &kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp A>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LALT &kp LEFT_SHIFT>;
 
             label = "AA_OSX_SHIFT";
