@@ -117,7 +117,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     lv_obj_t *art = lv_img_create(widget->obj);
     bool random = sys_rand32_get() & 1;
-    lv_image_set_src(art, random ? &balloon : &mountain);
+    lv_image_set_src(art, random ? &balloon : &mountain &mxLabs_pixel_1bit_68x140);
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
 
     sys_slist_append(&widgets, &widget->node);
