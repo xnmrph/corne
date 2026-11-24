@@ -20,19 +20,19 @@
   },
   "right": {
     "mode": "art",
-    "source": "right.jpg",
+    "source": "right.gif",
     "options": {
       "fit": "cover",
-      "dither": "bayer4",
+      "dither": "threshold",
       "threshold": 128,
       "brightness": 0,
       "contrast": 0,
       "invert": false,
       "white_background": true,
       "min_frame_ms": 100,
-      "zoom": 1.0,
-      "offset_x": 0.0,
-      "offset_y": 0.0,
+      "zoom": 1.042,
+      "offset_x": 0.5,
+      "offset_y": -3.4,
       "rotate": 0.0
     }
   },

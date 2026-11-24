@@ -1,6 +1,6 @@
 # nice!view pictures
 
-Made with mxKeys. Left half: ZMK's own screen. Right half: a picture in the art area (right.jpg).
+Made with mxKeys. Left half: ZMK's own screen. Right half: a picture in the art area (right.gif).
 
 The originals are in `source/`, the settings in `mxkeys.json`. `src/frames.c` is generated —
 change the pictures in mxKeys (or delete this folder and the `cmake`/`kconfig` lines in
