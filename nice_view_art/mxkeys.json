@@ -27,7 +27,7 @@
       "threshold": 128,
       "brightness": 0,
       "contrast": 0,
-      "invert": false,
+      "invert": true,
       "white_background": true,
       "min_frame_ms": 100,
       "zoom": 1.042,
