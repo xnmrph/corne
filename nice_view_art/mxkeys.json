@@ -23,16 +23,16 @@
     "source": "right.gif",
     "options": {
       "fit": "cover",
-      "dither": "floyd_steinberg",
-      "threshold": 107,
+      "dither": "atkinson",
+      "threshold": 128,
       "brightness": 0,
-      "contrast": 5,
+      "contrast": 0,
       "invert": false,
       "white_background": false,
-      "min_frame_ms": 120,
-      "zoom": 1.042,
-      "offset_x": 0.5,
-      "offset_y": -3.4,
+      "min_frame_ms": 100,
+      "zoom": 1.0,
+      "offset_x": 0.0,
+      "offset_y": 0.0,
       "rotate": 0.0
     }
   },
