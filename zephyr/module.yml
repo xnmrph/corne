@@ -1,3 +1,5 @@
 build:
+  cmake: nice_view_art
+  kconfig: nice_view_art/Kconfig
   settings:
     board_root: .

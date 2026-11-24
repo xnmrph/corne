@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "left": {
+    "mode": "off",
+    "source": null,
+    "options": {
+      "fit": "cover",
+      "dither": "atkinson",
+      "threshold": 128,
+      "brightness": 0,
+      "contrast": 0,
+      "invert": false,
+      "white_background": true,
+      "min_frame_ms": 100,
+      "zoom": 1.0,
+      "offset_x": 0.0,
+      "offset_y": 0.0,
+      "rotate": 0.0
+    }
+  },
+  "right": {
+    "mode": "art",
+    "source": "right.jpg",
+    "options": {
+      "fit": "cover",
+      "dither": "atkinson",
+      "threshold": 128,
+      "brightness": 0,
+      "contrast": 0,
+      "invert": false,
+      "white_background": true,
+      "min_frame_ms": 100,
+      "zoom": 1.0,
+      "offset_x": 0.0,
+      "offset_y": 0.0,
+      "rotate": 0.0
+    }
+  },
+  "budget_kib": 64
+}
