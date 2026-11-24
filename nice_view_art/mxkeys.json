@@ -23,7 +23,7 @@
     "source": "right.jpg",
     "options": {
       "fit": "cover",
-      "dither": "atkinson",
+      "dither": "bayer4",
       "threshold": 128,
       "brightness": 0,
       "contrast": 0,
