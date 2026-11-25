@@ -56,11 +56,11 @@ layers:
   - '0'
   - {type: trans}
   - {type: trans}
-  - Caps Word
+  - Caps
   - {type: trans}
   - {type: trans}
   - ↑
-  - Next tab
+  - Tab→
   - PgUp
   - '4'
   - '5'
@@ -147,7 +147,7 @@ layers:
   - F12
   - {type: trans}
   - {type: trans}
-  - Unlock
+  - Unlk
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -158,8 +158,8 @@ layers:
   - BT 1
   - BT 2
   - BT 3
-  - BT clr
-  - BT clr all
+  - BT✕
+  - All✕
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -192,8 +192,8 @@ layers:
   - {type: trans}
   - ⇣
   - {type: trans}
-  - Click L
-  - Click R
+  - L-clk
+  - R-clk
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -247,7 +247,7 @@ layers:
   - {t: Æ, h: Mac}
   - {t: æ, h: Mac}
   - {type: trans}
-  - NumLk
+  - Num
   - {type: trans}
   - {type: trans}
   - {type: trans}

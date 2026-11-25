@@ -47,7 +47,7 @@ layers:
     tr: )
   - t: Bspc
   - t: Shift
-    bl: Caps Word
+    bl: Caps
   - t: A
     tl: F11
   - t: S
@@ -57,9 +57,9 @@ layers:
     bl: ↑
     br: ↑
   - t: F
-    bl: Next tab
+    bl: Tab→
   - t: G
-    tl: Unlock
+    tl: Unlk
     tr: '`'
     bl: PgUp
     br: ⇣
@@ -69,11 +69,11 @@ layers:
   - t: J
     tr: '='
     bl: '5'
-    br: Click L
+    br: L-clk
   - t: K
     tr: '['
     bl: '6'
-    br: Click R
+    br: R-clk
   - t: L
     tr: ']'
   - t: ;
@@ -94,12 +94,12 @@ layers:
     bl: ↓
     br: ↓
   - t: V
-    tl: BT clr
+    tl: BT✕
     tr: →
     bl: →
     br: →
   - t: B
-    tl: BT clr all
+    tl: All✕
     tr: '~'
     bl: PgDn
   - t: N
