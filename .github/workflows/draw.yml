@@ -1,19 +1,38 @@
 name: Draw keymaps
+
+# Draws the keymap with keymap-drawer in the MX Nexus style:
+#   keymap-drawer/corne.svg         every layer on one picture (urob-style), plus combos
+#   keymap-drawer/corne-layers.svg  each layer separately
 on:
   workflow_dispatch:
   push:
     paths:
       - "config/*.keymap"
       - "keymap_drawer.config.yaml"
+      - "keymap-drawer/merge.py"
+      - ".github/workflows/draw.yml"
+
+permissions:
+  contents: write
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    permissions:
-      contents: write
-    with:
-      keymap_patterns: "config/*.keymap"
-      config_path: "keymap_drawer.config.yaml"   # optional styling; drop the line if you don't have one
-      output_folder: "keymap-drawer"
-      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
-      destination: "commit"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install keymap-drawer==0.23.0
+      - name: Draw
+        run: |
+          keymap -c keymap_drawer.config.yaml parse -z config/corne.keymap > keymap-drawer/corne-layers.yaml
+          python keymap-drawer/merge.py keymap-drawer/corne-layers.yaml > keymap-drawer/corne.yaml
+          keymap -c keymap_drawer.config.yaml draw keymap-drawer/corne.yaml > keymap-drawer/corne.svg
+          keymap -c keymap_drawer.config.yaml draw keymap-drawer/corne-layers.yaml > keymap-drawer/corne-layers.svg
+      - name: Commit the pictures
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add keymap-drawer
+          git diff --cached --quiet || { git commit -m "[Draw] ${{ github.event.head_commit.message || 'keymap pictures' }}" && git push; }
