@@ -52,6 +52,48 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        bspc_del: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        layer_lock_1: layer_lock_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&tog 1>;
+        };
+
+        layer_lock_2: layer_lock_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 2>, <&tog 2>;
+        };
+
+        layer_lock_1_2: layer_lock_1_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&tog 1>;
+        };
+
+        smart_shift: smart_shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk LSHFT>, <&caps_word>;
+        };
+
+        end_sentence: end_sentence {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&dot_space>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -234,6 +276,12 @@
 
             label = "AE_OSX_SHIFT";
         };
+
+        dot_space: dot_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp DOT>, <&kp SPACE>, <&sk LSHFT>;
+        };
     };
 
     combos {
@@ -365,10 +413,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U      &kp I         &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT       &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J      &kp K         &kp L    &kp SEMI  &kp SQT
+&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U      &kp I         &kp O    &kp P     &bspc_del
+&smart_shift    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J      &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M      &kp COMMA     &kp DOT  &kp FSLH  &mo 4
-                              &kp LGUI  &mo 1  &kp SPACE    &kp RET  &lt 2 TAB  &kp LEFT_ALT
+                              &kp LGUI  &layer_lock_1_2 &end_sentence &kp RET  &lt 2 TAB  &kp LEFT_ALT
             >;
         };
 
@@ -385,7 +433,7 @@
 &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)    &kp N7   &kp N8  &kp N9  &kp N0  &trans  &trans
 &caps_word        &trans            &trans            &kp UP            &browsertab       &kp PAGE_UP         &kp N4   &kp N5  &kp N6  &trans  &trans  &trans
 &kp LEFT_SHIFT    &trans            &kp LEFT_ARROW    &kp DOWN          &kp RIGHT         &kp PAGE_DOWN       &kp N1   &kp N2  &kp N3  &trans  &trans  &trans
-                                                      &kp LGUI          &trans            &kp SPACE           &kp RET  &mo 3   &trans
+                                                      &kp LGUI          &trans            &end_sentence       &kp RET  &mo 3   &trans
             >;
         };
 
@@ -402,7 +450,7 @@
 &kp NON_US_HASH &kp EXCL  &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR  &trans
 &trans  &trans    &trans          &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT       &kp RBKT              &kp BSLH  &trans
 &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC       &kp RBRC              &kp PIPE  &trans
-                                  &kp LGUI        &mo 3            &kp SPACE    &kp RET    &trans     &kp RIGHT_ALT
+                                  &kp LGUI        &mo 3            &end_sentence &kp RET    &trans     &kp RIGHT_ALT
             >;
         };
 
