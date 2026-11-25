@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - Bspc
-  - Shift
+  - {t: Bspc, s: Del}
+  - '&smart_shift'
   - A
   - S
   - D
@@ -38,8 +38,8 @@ layers:
   - /
   - Extra
   - Gui
-  - NavNum
-  - Space
+  - '&layer_lock_1_2'
+  - {t: Space, s: '&dot_space'}
   - Enter
   - {t: Tab, h: Symbols}
   - Alt
@@ -81,8 +81,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - Gui
-  - {type: held}
-  - Space
+  - {type: trans}
+  - {t: Space, s: '&dot_space'}
   - Enter
   - System
   - {type: trans}
@@ -125,7 +125,7 @@ layers:
   - {type: trans}
   - Gui
   - System
-  - Space
+  - {t: Space, s: '&dot_space'}
   - Enter
   - {type: held}
   - AltGr
@@ -167,7 +167,7 @@ layers:
   - Boot
   - {type: trans}
   - {type: trans}
-  - {type: held}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: held}

@@ -46,7 +46,8 @@ layers:
     tl: F10
     tr: )
   - t: Bspc
-  - t: Shift
+    s: Del
+  - t: '&smart_shift'
     bl: Caps
   - t: A
     tl: F11
@@ -119,9 +120,9 @@ layers:
   - t: Extra
     type: lt-br
   - t: Gui
-  - t: NavNum
-    type: lt-bl
+  - t: '&layer_lock_1_2'
   - t: Space
+    s: '&dot_space'
   - t: Enter
   - t: Tab
     h: Symbols
