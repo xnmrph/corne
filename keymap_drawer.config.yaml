@@ -176,10 +176,10 @@ draw_config:
   footer_text: "xnmrph/corne · drawn with keymap-drawer"
   svg_extra_style: |
     /* MX Nexus: dark ground, quiet surfaces, one signal yellow. */
-    svg.keymap { font-family: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif; font-size: 15px; fill: #EEF2F5; background-color: #101920; }
+    svg.keymap { font-family: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif; font-size: 15px; fill: #EEF2F5; }
     rect.key { fill: #1D2A35; stroke: #263440; stroke-width: 1.2; }
     rect.combo, rect.combo-separate { fill: #16212A; stroke: #687886; stroke-width: 1; }
-    rect.trans, rect.blank { fill: #16212A; stroke: #1D2A35; }
+    rect.trans, rect.blank { fill: none; stroke: #687886; stroke-opacity: 0.45; }
     rect.held, rect.combo.held { fill: #FFE714; stroke: #B8A000; }
     rect.held + text, text.held { fill: #101920; }
     text.tap { font-weight: 500; font-size: 17px; }
@@ -207,6 +207,6 @@ draw_config:
     text.combo { fill: #EEF2F5; font-size: 12px; font-weight: 500; }
     text.combo.shifted { fill: #9AA8B4; font-size: 9px; }
     path.combo { stroke: #687886; stroke-width: 1.2; }
-    text.label { fill: #9AA8B4; stroke: #101920; font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
-    text.footer { fill: #6E7D8A; stroke: #101920; font-family: "IBM Plex Mono", monospace; font-size: 11px; }
+    text.label { fill: #6E7D8A; stroke: none; font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
+    text.footer { fill: #6E7D8A; stroke: none; font-family: "IBM Plex Mono", monospace; font-size: 11px; }
     text.trans { fill: #6E7D8A; }
