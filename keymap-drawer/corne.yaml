@@ -117,12 +117,15 @@ layers:
     tl: Boot
     tr: '|'
   - t: Extra
+    type: lt-br
   - t: Gui
   - t: NavNum
+    type: lt-bl
   - t: Space
   - t: Enter
   - t: Tab
     h: Symbols
+    type: lh-tr
   - t: Alt
   Combos:
   - t: ''
@@ -328,5 +331,3 @@ combos:
   k: Ctrl V
   l:
   - Combos
-draw_config:
-  footer_text: 'xnmrph/corne · corners: ◤ System  ◥ Symbols  ◣ NavNum  ◢ Extra · drawn with keymap-drawer'

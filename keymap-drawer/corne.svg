@@ -369,17 +369,17 @@ text.trans { fill: #6E7D8A; }
 <text x="-24" y="-24" class="key tl">Boot</text>
 <text x="24" y="-24" class="key tr">|</text>
 </g>
-<g transform="translate(928, 184)" class="key keypos-35">
-<rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key"/>
-<text x="0" y="0" class="key tap">Extra</text>
+<g transform="translate(928, 184)" class="key lt-br keypos-35">
+<rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key lt-br"/>
+<text x="0" y="0" class="key lt-br tap">Extra</text>
 </g>
 <g transform="translate(256, 234)" class="key keypos-36">
 <rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key"/>
 <text x="0" y="0" class="key tap">Gui</text>
 </g>
-<g transform="translate(326, 244) rotate(15.0)" class="key keypos-37">
-<rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key"/>
-<text x="0" y="0" class="key tap">NavNum</text>
+<g transform="translate(326, 244) rotate(15.0)" class="key lt-bl keypos-37">
+<rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key lt-bl"/>
+<text x="0" y="0" class="key lt-bl tap">NavNum</text>
 </g>
 <g transform="translate(401, 256) rotate(30.0)" class="key keypos-38">
 <rect rx="10" ry="10" x="-29" y="-45" width="58" height="90" class="key"/>
@@ -389,10 +389,10 @@ text.trans { fill: #6E7D8A; }
 <rect rx="10" ry="10" x="-29" y="-45" width="58" height="90" class="key"/>
 <text x="0" y="0" class="key tap">Enter</text>
 </g>
-<g transform="translate(634, 244) rotate(-15.0)" class="key keypos-40">
-<rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key"/>
-<text x="0" y="0" class="key tap">Tab</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 86%">Symbols</tspan></text>
+<g transform="translate(634, 244) rotate(-15.0)" class="key lh-tr keypos-40">
+<rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key lh-tr"/>
+<text x="0" y="0" class="key lh-tr tap">Tab</text>
+<text x="0" y="24" class="key lh-tr hold"><tspan style="font-size: 86%">Symbols</tspan></text>
 </g>
 <g transform="translate(704, 234)" class="key keypos-41">
 <rect rx="10" ry="10" x="-29" y="-29" width="58" height="58" class="key"/>
@@ -617,4 +617,5 @@ text.trans { fill: #6E7D8A; }
 </g>
 </g>
 </g>
-<text x="984.0" y="738.0" class="footer">xnmrph/corne · corners: ◤ System  ◥ Symbols  ◣ NavNum  ◢ Extra · drawn with keymap-drawer</text></svg>
+<text x="984.0" y="738.0" class="footer">xnmrph/corne · drawn with keymap-drawer</text><g class="layer-combos"><rect rx="10" ry="10" x="416.0" y="58" width="176" height="128" class="panel"/><text x="504.0" y="78" class="panel-title">LAYER COMBOS</text><text x="504.0" y="102" class="panel"><tspan class="panel">hold </tspan><tspan class="c-bl">NavNum</tspan> <tspan class="panel">+</tspan> <tspan class="c-tr">Symbols</tspan></text><text x="504.0" y="121" class="panel"><tspan class="panel">→ </tspan><tspan class="c-tl">System</tspan></text><text x="504.0" y="148" class="panel"><tspan class="panel">hold </tspan><tspan class="c-tr">Symbols</tspan> <tspan class="panel">+</tspan> <tspan class="c-br">Extra</tspan></text><text x="504.0" y="167" class="panel"><tspan class="panel">→ </tspan><tspan class="c-s">NOR</tspan><tspan class="panel"> (å ø æ)</tspan></text></g>
+</svg>
