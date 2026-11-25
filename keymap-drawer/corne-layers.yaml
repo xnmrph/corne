@@ -1,0 +1,314 @@
+layout: {zmk_keyboard: corne}
+layers:
+  Base:
+  - Esc
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - Bspc
+  - Shift
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - Ctrl
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Extra
+  - Gui
+  - NavNum
+  - Space
+  - Enter
+  - {t: Tab, h: Symbols}
+  - Alt
+  NavNum:
+  - ❖1
+  - ❖2
+  - ❖3
+  - ❖4
+  - ❖5
+  - ❖6
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {type: trans}
+  - {type: trans}
+  - Caps Word
+  - {type: trans}
+  - {type: trans}
+  - ↑
+  - Next tab
+  - PgUp
+  - '4'
+  - '5'
+  - '6'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Shift
+  - {type: trans}
+  - ←
+  - ↓
+  - →
+  - PgDn
+  - '1'
+  - '2'
+  - '3'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Gui
+  - {type: held}
+  - Space
+  - Enter
+  - System
+  - {type: trans}
+  Symbols:
+  - ''''
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ↑
+  - {type: trans}
+  - '`'
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ←
+  - ↓
+  - →
+  - '~'
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - {type: trans}
+  - Gui
+  - System
+  - Space
+  - Enter
+  - {type: held}
+  - AltGr
+  System:
+  - {type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {type: trans}
+  - {type: trans}
+  - F11
+  - F12
+  - {type: trans}
+  - {type: trans}
+  - Unlock
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT clr
+  - BT clr all
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Boot
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  Extra:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ⇡
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ↑
+  - {type: trans}
+  - ⇣
+  - {type: trans}
+  - Click L
+  - Click R
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ←
+  - ↓
+  - →
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  NOR:
+  - {t: Å, h: Win}
+  - {t: Ø, h: Win}
+  - {t: Æ, h: Win}
+  - {type: trans}
+  - {t: Å, h: Mac}
+  - {t: å, h: Mac}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: å, h: Win}
+  - {t: ø, h: Win}
+  - {t: æ, h: Win}
+  - {type: trans}
+  - {t: Ø, h: Mac}
+  - {t: ø, h: Mac}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Æ, h: Mac}
+  - {t: æ, h: Mac}
+  - {type: trans}
+  - NumLk
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+combos:
+- p: [13, 29]
+  k: Esc
+- p: [15, 21]
+  k: Del
+- p: [5, 17]
+  k: '%'
+  l: [Base]
+- p: [28, 16]
+  k: '='
+  l: [Base]
+- p: [4, 16]
+  k: $
+  l: [Base]
+- p: [3, 15]
+  k: '#'
+  l: [Base]
+- p: [2, 14]
+  k: '@'
+  l: [Base]
+- p: [26, 14]
+  k: \
+  l: [Base]
+- p: [8, 20]
+  k: '*'
+  l: [Base]
+- p: [32, 20]
+  k: /
+  l: [Base]
+- p: [7, 19]
+  k: +
+  l: [Base]
+- p: [31, 19]
+  k: '-'
+  l: [Base]
+- p: [30, 18]
+  k: _
+  l: [Base]
+- p: [31, 32]
+  k: '['
+  l: [Base]
+- p: [33, 32]
+  k: ']'
+  l: [Base]
+- p: [20, 19]
+  k: {t: (, s: <}
+  l: [Base]
+- p: [20, 21]
+  k: {t: ), s: '>'}
+  l: [Base]
+- p: [26, 27]
+  k: Ctrl C
+- p: [28, 27]
+  k: Ctrl V
