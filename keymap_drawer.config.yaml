@@ -1,0 +1,199 @@
+# keymap-drawer settings for xnmrph/corne, in the MX Nexus look (mxKeys' design
+# language). keymap-drawer/merge.py turns the layers into one picture: base layer in the
+# middle of each key, the other layers in the corners (idea from urob/zmk-config).
+
+parse_config:
+  trans_legend: {t: "", type: trans}
+  modifier_fn_map:
+    left_ctrl: Ctrl
+    right_ctrl: Ctrl
+    left_shift: Shift
+    right_shift: Shift
+    left_alt: Alt
+    right_alt: AltGr
+    left_gui: Gui
+    right_gui: Gui
+    keycode_combiner: "{mods} {key}"
+    mod_combiner: "{mod_1}{mod_2}"
+  zmk_keycode_map:
+    # keymap-drawer's built-in names (this list replaces them, so they're repeated here)
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+    # ours
+    BACKSPACE: Bspc
+    BSPC: Bspc
+    ESCAPE: Esc
+    ESC: Esc
+    RET: Enter
+    RETURN: Enter
+    ENTER: Enter
+    SPACE: Space
+    TAB: Tab
+    DELETE: Del
+    DEL: Del
+    LSHFT: Shift
+    LEFT_SHIFT: Shift
+    LCTRL: Ctrl
+    LGUI: Gui
+    LEFT_ALT: Alt
+    RIGHT_ALT: AltGr
+    UP: "↑"
+    UP_ARROW: "↑"
+    DOWN: "↓"
+    DOWN_ARROW: "↓"
+    LEFT: "←"
+    LEFT_ARROW: "←"
+    RIGHT: "→"
+    RIGHT_ARROW: "→"
+    PAGE_UP: PgUp
+    PAGE_DOWN: PgDn
+    NON_US_HASH: "'"
+    KP_MINUS: "-"
+    KP_NUMLOCK: NumLk
+    SEMI: ";"
+    SQT: "'"
+    COMMA: ","
+    DOT: "."
+    FSLH: "/"
+  raw_binding_map:
+    "&caps_word": Caps Word
+    "&browsertab": Next tab
+    "&studio_unlock": Unlock
+    "&bootloader": Boot
+    "&bt BT_SEL 0": BT 1
+    "&bt BT_SEL 1": BT 2
+    "&bt BT_SEL 2": BT 3
+    "&bt BT_CLR": BT clr
+    "&bt BT_CLR_ALL": BT clr all
+    "&paraless": {t: "(", s: "<"}
+    "&paragreat": {t: ")", s: ">"}
+    "&aa_win": {t: "å", h: Win}
+    "&aa_win_shift": {t: "Å", h: Win}
+    "&oe_win": {t: "ø", h: Win}
+    "&oe_win_shift": {t: "Ø", h: Win}
+    "&ae_win": {t: "æ", h: Win}
+    "&ae_win_shift": {t: "Æ", h: Win}
+    "&aa_osx": {t: "å", h: Mac}
+    "&aa_osx_shift": {t: "Å", h: Mac}
+    "&oe_osx": {t: "ø", h: Mac}
+    "&oe_osx_shift": {t: "Ø", h: Mac}
+    "&ae_osx": {t: "æ", h: Mac}
+    "&ae_osx_shift": {t: "Æ", h: Mac}
+    "&mmv MOVE_UP": "↑"
+    "&mmv MOVE_DOWN": "↓"
+    "&mmv MOVE_LEFT": "←"
+    "&mmv MOVE_RIGHT": "→"
+    "&msc SCRL_UP": "⇡"
+    "&msc SCRL_DOWN": "⇣"
+    "&mkp LCLK": Click L
+    "&mkp RCLK": Click R
+    "&kp LG(NUMBER_1)": "❖1"
+    "&kp LG(NUMBER_2)": "❖2"
+    "&kp LG(NUMBER_3)": "❖3"
+    "&kp LG(NUMBER_4)": "❖4"
+    "&kp LG(NUMBER_5)": "❖5"
+    "&kp LG(NUMBER_6)": "❖6"
+
+draw_config:
+  key_w: 72
+  key_h: 64
+  key_rx: 10
+  key_ry: 10
+  split_gap: 64
+  combo_w: 30
+  combo_h: 26
+  inner_pad_w: 3
+  inner_pad_h: 3
+  outer_pad_w: 24
+  outer_pad_h: 44
+  small_pad: 5
+  n_columns: 1
+  append_colon_to_layer_header: false
+  draw_key_sides: false
+  shrink_wide_legends: 6
+  footer_text: "xnmrph/corne · drawn with keymap-drawer"
+  svg_extra_style: |
+    /* MX Nexus: dark ground, quiet surfaces, one signal yellow. */
+    svg.keymap { font-family: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif; font-size: 15px; fill: #EEF2F5; background-color: #101920; }
+    rect.key { fill: #1D2A35; stroke: #263440; stroke-width: 1.2; }
+    rect.combo, rect.combo-separate { fill: #16212A; stroke: #687886; stroke-width: 1; }
+    rect.trans, rect.blank { fill: #16212A; stroke: #1D2A35; }
+    rect.held, rect.combo.held { fill: #FFE714; stroke: #B8A000; }
+    rect.held + text, text.held { fill: #101920; }
+    text.tap { font-weight: 500; }
+    text.hold { fill: #9AA8B4; font-size: 11px; }
+    text.shifted { fill: #9AA8B4; font-size: 11px; }
+    text.layer-activator { text-decoration: none; fill: #FFE714; }
+    text.tl, text.tr, text.bl, text.br { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 10px; }
+    text.tl { fill: #6CB2FF; }
+    text.tr { fill: #F5A524; }
+    text.bl { fill: #FFE714; }
+    text.br { fill: #3DD68C; }
+    text.combo { fill: #EEF2F5; font-size: 12px; font-weight: 500; }
+    text.combo.shifted { fill: #9AA8B4; font-size: 9px; }
+    path.combo { stroke: #687886; stroke-width: 1.2; }
+    text.label { fill: #9AA8B4; stroke: #101920; font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
+    text.footer { fill: #6E7D8A; stroke: #101920; font-family: "IBM Plex Mono", monospace; font-size: 11px; }
+    text.trans { fill: #6E7D8A; }
