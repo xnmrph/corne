@@ -111,22 +111,22 @@ parse_config:
     PAGE_DOWN: PgDn
     NON_US_HASH: "'"
     KP_MINUS: "-"
-    KP_NUMLOCK: NumLk
+    KP_NUMLOCK: Num
     SEMI: ";"
     SQT: "'"
     COMMA: ","
     DOT: "."
     FSLH: "/"
   raw_binding_map:
-    "&caps_word": Caps Word
-    "&browsertab": Next tab
-    "&studio_unlock": Unlock
+    "&caps_word": Caps
+    "&browsertab": "Tab→"
+    "&studio_unlock": Unlk
     "&bootloader": Boot
     "&bt BT_SEL 0": BT 1
     "&bt BT_SEL 1": BT 2
     "&bt BT_SEL 2": BT 3
-    "&bt BT_CLR": BT clr
-    "&bt BT_CLR_ALL": BT clr all
+    "&bt BT_CLR": "BT✕"
+    "&bt BT_CLR_ALL": "All✕"
     "&paraless": {t: "(", s: "<"}
     "&paragreat": {t: ")", s: ">"}
     "&aa_win": {t: "å", h: Win}
@@ -147,8 +147,8 @@ parse_config:
     "&mmv MOVE_RIGHT": "→"
     "&msc SCRL_UP": "⇡"
     "&msc SCRL_DOWN": "⇣"
-    "&mkp LCLK": Click L
-    "&mkp RCLK": Click R
+    "&mkp LCLK": "L-clk"
+    "&mkp RCLK": "R-clk"
     "&kp LG(NUMBER_1)": "❖1"
     "&kp LG(NUMBER_2)": "❖2"
     "&kp LG(NUMBER_3)": "❖3"
@@ -157,18 +157,18 @@ parse_config:
     "&kp LG(NUMBER_6)": "❖6"
 
 draw_config:
-  key_w: 72
-  key_h: 64
+  key_w: 84
+  key_h: 72
   key_rx: 10
   key_ry: 10
-  split_gap: 64
+  split_gap: 72
   combo_w: 30
   combo_h: 26
-  inner_pad_w: 3
-  inner_pad_h: 3
+  inner_pad_w: 4
+  inner_pad_h: 4
   outer_pad_w: 24
   outer_pad_h: 44
-  small_pad: 5
+  small_pad: 7
   n_columns: 1
   append_colon_to_layer_header: false
   draw_key_sides: false
@@ -182,15 +182,28 @@ draw_config:
     rect.trans, rect.blank { fill: #16212A; stroke: #1D2A35; }
     rect.held, rect.combo.held { fill: #FFE714; stroke: #B8A000; }
     rect.held + text, text.held { fill: #101920; }
-    text.tap { font-weight: 500; }
+    text.tap { font-weight: 500; font-size: 17px; }
+    text.tap.lt-bl, text.tap.lt-br { font-size: 15px; }
     text.hold { fill: #9AA8B4; font-size: 11px; }
-    text.shifted { fill: #9AA8B4; font-size: 11px; }
-    text.layer-activator { text-decoration: none; fill: #FFE714; }
-    text.tl, text.tr, text.bl, text.br { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 10px; }
-    text.tl { fill: #6CB2FF; }
-    text.tr { fill: #F5A524; }
-    text.bl { fill: #FFE714; }
-    text.br { fill: #3DD68C; }
+    text.hold.lh-tr { font-size: 12px; }
+    text.layer-activator { text-decoration: none; }
+    text.tl, text.tr, text.bl, text.br, text.shifted { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 11px; }
+    /* One colour per layer: its corner legends, the key that turns it on, and its name
+       in the layer-combo panel (keymap-drawer/merge.py adds the lt-/lh-/c- classes). */
+    text.tl, text.lt-tl.tap, text.lh-tl.hold, .c-tl { fill: #6CB2FF; }
+    text.tr, text.lt-tr.tap, text.lh-tr.hold, .c-tr { fill: #3DD68C; }
+    text.bl, text.lt-bl.tap, text.lh-bl.hold, .c-bl { fill: #FFE714; }
+    text.br, text.lt-br.tap, text.lh-br.hold, .c-br { fill: #F5A524; }
+    text.shifted, text.lt-s.tap, text.lh-s.hold, .c-s { fill: #FF6166; }
+    text.lh-tl.hold, text.lh-tr.hold, text.lh-bl.hold, text.lh-br.hold { font-weight: 600; }
+    text.panel { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 12px; fill: #9AA8B4; text-anchor: middle; }
+    text.panel-title { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; fill: #9AA8B4; text-anchor: middle; }
+    rect.panel { fill: #16212A; stroke: #263440; }
+    /* Layer keys: a thin outline in the layer's colour. */
+    rect.lt-tl, rect.lh-tl { stroke: #6CB2FF; stroke-width: 1.5; }
+    rect.lt-tr, rect.lh-tr { stroke: #3DD68C; stroke-width: 1.5; }
+    rect.lt-bl, rect.lh-bl { stroke: #FFE714; stroke-width: 1.5; }
+    rect.lt-br, rect.lh-br { stroke: #F5A524; stroke-width: 1.5; }
     text.combo { fill: #EEF2F5; font-size: 12px; font-weight: 500; }
     text.combo.shifted { fill: #9AA8B4; font-size: 9px; }
     path.combo { stroke: #687886; stroke-width: 1.2; }
