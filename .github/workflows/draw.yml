@@ -29,6 +29,7 @@ jobs:
           keymap -c keymap_drawer.config.yaml parse -z config/corne.keymap > keymap-drawer/corne-layers.yaml
           python keymap-drawer/merge.py keymap-drawer/corne-layers.yaml > keymap-drawer/corne.yaml
           keymap -c keymap_drawer.config.yaml draw keymap-drawer/corne.yaml > keymap-drawer/corne.svg
+          python keymap-drawer/merge.py panel keymap-drawer/corne.svg
           keymap -c keymap_drawer.config.yaml draw keymap-drawer/corne-layers.yaml > keymap-drawer/corne-layers.svg
       - name: Commit the pictures
         run: |
