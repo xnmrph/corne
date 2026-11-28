@@ -94,6 +94,14 @@
             bindings = <&kp SPACE>, <&dot_space>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        grave_esc: grave_esc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -413,7 +421,7 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U      &kp I         &kp O    &kp P     &bspc_del
+&grave_esc      &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U      &kp I         &kp O    &kp P     &bspc_del
 &smart_shift    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J      &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M      &kp COMMA     &kp DOT  &kp FSLH  &mo 4
                               &kp LGUI  &layer_lock_1_2 &end_sentence &kp RET  &lt 2 TAB  &kp LEFT_ALT
