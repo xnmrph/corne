@@ -3,6 +3,7 @@ layout:
 layers:
   Layers:
   - t: Esc
+    s: '`'
     tr: ''''
     bl: ❖1
   - t: Q

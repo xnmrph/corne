@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - Esc
+  - {t: Esc, s: '`'}
   - Q
   - W
   - E
