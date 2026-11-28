@@ -251,12 +251,12 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: held}
   - {type: trans}
 combos:
 - p: [13, 29]

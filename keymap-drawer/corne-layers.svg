@@ -1260,8 +1260,8 @@ text.trans { fill: #6E7D8A; }
 <g transform="translate(972, 207)" class="key trans keypos-34">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(1044, 207)" class="key trans keypos-35">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
+<g transform="translate(1044, 207)" class="key held keypos-35">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key held"/>
 </g>
 <g transform="translate(288, 263)" class="key trans keypos-36">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
@@ -1275,8 +1275,8 @@ text.trans { fill: #6E7D8A; }
 <g transform="translate(629, 288) rotate(-30.0)" class="key trans keypos-39">
 <rect rx="10" ry="10" x="-32" y="-50" width="64" height="100" class="key trans"/>
 </g>
-<g transform="translate(713, 274) rotate(-15.0)" class="key trans keypos-40">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
+<g transform="translate(713, 274) rotate(-15.0)" class="key held keypos-40">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key held"/>
 </g>
 <g transform="translate(792, 263)" class="key trans keypos-41">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
