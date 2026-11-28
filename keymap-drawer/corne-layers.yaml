@@ -216,24 +216,6 @@ layers:
   - {type: trans}
   - {type: trans}
   NOR:
-  - {t: Å, h: Win}
-  - {t: Ø, h: Win}
-  - {t: Æ, h: Win}
-  - {type: trans}
-  - {t: Å, h: Mac}
-  - {t: å, h: Mac}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {t: å, h: Win}
-  - {t: ø, h: Win}
-  - {t: æ, h: Win}
-  - {type: trans}
-  - {t: Ø, h: Mac}
-  - {t: ø, h: Mac}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -244,19 +226,37 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: Æ, h: Mac}
-  - {t: æ, h: Mac}
-  - {type: trans}
-  - Num
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
+  - AltGr W
+  - AltGr L
+  - AltGr Z
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
 combos:
 - p: [13, 29]

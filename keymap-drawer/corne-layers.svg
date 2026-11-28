@@ -1146,33 +1146,23 @@ text.trans { fill: #6E7D8A; }
 <g transform="translate(24, 1986)" class="layer-NOR">
 <text x="0" y="22" class="label" id="NOR">NOR</text>
 <g transform="translate(0, 44)">
-<g transform="translate(36, 63)" class="key keypos-0">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">Å</text>
-<text x="0" y="25" class="key hold">Win</text>
+<g transform="translate(36, 63)" class="key trans keypos-0">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(108, 63)" class="key keypos-1">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">Ø</text>
-<text x="0" y="25" class="key hold">Win</text>
+<g transform="translate(108, 63)" class="key trans keypos-1">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(180, 45)" class="key keypos-2">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">Æ</text>
-<text x="0" y="25" class="key hold">Win</text>
+<g transform="translate(180, 45)" class="key trans keypos-2">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(252, 36)" class="key trans keypos-3">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(324, 45)" class="key keypos-4">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">Å</text>
-<text x="0" y="25" class="key hold">Mac</text>
+<g transform="translate(324, 45)" class="key trans keypos-4">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(396, 54)" class="key keypos-5">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">å</text>
-<text x="0" y="25" class="key hold">Mac</text>
+<g transform="translate(396, 54)" class="key trans keypos-5">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(684, 54)" class="key trans keypos-6">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
@@ -1192,33 +1182,32 @@ text.trans { fill: #6E7D8A; }
 <g transform="translate(1044, 63)" class="key trans keypos-11">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(36, 135)" class="key keypos-12">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">å</text>
-<text x="0" y="25" class="key hold">Win</text>
+<g transform="translate(36, 135)" class="key trans keypos-12">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(108, 135)" class="key keypos-13">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">ø</text>
-<text x="0" y="25" class="key hold">Win</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">AltGr</tspan><tspan x="0" dy="1.2em">W</tspan>
+</text>
 </g>
 <g transform="translate(180, 117)" class="key keypos-14">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">æ</text>
-<text x="0" y="25" class="key hold">Win</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">AltGr</tspan><tspan x="0" dy="1.2em">L</tspan>
+</text>
 </g>
-<g transform="translate(252, 108)" class="key trans keypos-15">
+<g transform="translate(252, 108)" class="key keypos-15">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">AltGr</tspan><tspan x="0" dy="1.2em">Z</tspan>
+</text>
+</g>
+<g transform="translate(324, 117)" class="key trans keypos-16">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(324, 117)" class="key keypos-16">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">Ø</text>
-<text x="0" y="25" class="key hold">Mac</text>
-</g>
-<g transform="translate(396, 126)" class="key keypos-17">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">ø</text>
-<text x="0" y="25" class="key hold">Mac</text>
+<g transform="translate(396, 126)" class="key trans keypos-17">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(684, 126)" class="key trans keypos-18">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
@@ -1250,22 +1239,17 @@ text.trans { fill: #6E7D8A; }
 <g transform="translate(252, 180)" class="key trans keypos-27">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(324, 189)" class="key keypos-28">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">Æ</text>
-<text x="0" y="25" class="key hold">Mac</text>
+<g transform="translate(324, 189)" class="key trans keypos-28">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(396, 198)" class="key keypos-29">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">æ</text>
-<text x="0" y="25" class="key hold">Mac</text>
+<g transform="translate(396, 198)" class="key trans keypos-29">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(684, 198)" class="key trans keypos-30">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(756, 189)" class="key keypos-31">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key"/>
-<text x="0" y="0" class="key tap">Num</text>
+<g transform="translate(756, 189)" class="key trans keypos-31">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(828, 180)" class="key trans keypos-32">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
@@ -1276,8 +1260,8 @@ text.trans { fill: #6E7D8A; }
 <g transform="translate(972, 207)" class="key trans keypos-34">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
-<g transform="translate(1044, 207)" class="key held keypos-35">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key held"/>
+<g transform="translate(1044, 207)" class="key trans keypos-35">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(288, 263)" class="key trans keypos-36">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
@@ -1291,8 +1275,8 @@ text.trans { fill: #6E7D8A; }
 <g transform="translate(629, 288) rotate(-30.0)" class="key trans keypos-39">
 <rect rx="10" ry="10" x="-32" y="-50" width="64" height="100" class="key trans"/>
 </g>
-<g transform="translate(713, 274) rotate(-15.0)" class="key held keypos-40">
-<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key held"/>
+<g transform="translate(713, 274) rotate(-15.0)" class="key trans keypos-40">
+<rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
 </g>
 <g transform="translate(792, 263)" class="key trans keypos-41">
 <rect rx="10" ry="10" x="-32" y="-32" width="64" height="64" class="key trans"/>
