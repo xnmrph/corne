@@ -492,8 +492,6 @@
             >;
         };
 
-            label = "NOR";
-        };
     };
 
     conditional_layers {
